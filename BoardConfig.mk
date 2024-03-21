@@ -28,6 +28,7 @@ TARGET_KERNEL_CONFIG := lineage-a5y17lte_defconfig
 TARGET_OTA_ASSERT_DEVICE := a5y17lte,a5y17ltecan,a5y17ltexx
 
 # Prebuilt Kernel
+TARGET_FORCE_PREBUILT_KERNEL := true
 TARGET_PREBUILT_KERNEL := $(LOCAL_PATH)/prebuilts/kernel
 BOARD_KERNEL_BASE := 0x10000000
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x01000000 --tags_offset 0x00000100 --dt $(LOCAL_PATH)/prebuilts/dt.img
